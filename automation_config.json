@@ -1,0 +1,32 @@
+{
+  "salome_gui_bat": "C:\\Users\\ghchoi\\Desktop\\v2023\\run_mesa_salome.bat",
+  "salome_batch_bat": "C:\\Users\\ghchoi\\Desktop\\v2023\\run_salome.bat",
+  "med_file": "C:\\Users\\ghchoi\\Desktop\\Antigravity\\Salome_meca_automation\\mesh.med",
+  "output_dir": "C:\\Users\\ghchoi\\Desktop\\Antigravity\\Salome_meca_automation\\report_out",
+  "auto_detect_med_on_save": true,
+  "auto_open_pdf": true,
+  "timeout_sec": 3600,
+  "material": {
+    "name": "Structural Steel",
+    "E_GPa": 200.0,
+    "nu": 0.3,
+    "rho": 7850.0,
+    "yield_MPa": 250.0
+  },
+  "boundary_conditions": {
+    "fix_group": "fix",
+    "load_group": "load_z",
+    "load_type": "FORCE_FACE",
+    "fx": 0.0,
+    "fy": 0.0,
+    "fz": -50000000.0
+  },
+  "report": {
+    "lang": "ko",
+    "length_unit": "m",
+    "stress_unit": "Pa",
+    "scale": "1",
+    "az": -60.0,
+    "el": 25.0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "file": "result.rmed",
+  "nodes": 127635,
+  "volume_element": "T10",
+  "n_volume_elements": 84516,
+  "material": {
+    "name": "Structural Steel",
+    "E_GPa": 200.0,
+    "nu": 0.3,
+    "rho": 7850.0,
+    "yield_MPa": 250.0,
+    "source": ".comm (analysis.comm): name, E_GPa, nu, rho; CLI: name, E_GPa, nu, rho, yield_MPa",
+    "assumed_keys": []
+  },
+  "displacement_mm": {
+    "|U|": {
+      "min": 0.0,
+      "imin": 8,
+      "max": 337.49218337465857,
+      "imax": 170
+    },
+    "DX": {
+      "min": -16.833523702213828,
+      "imin": 18548,
+      "max": 16.83366494770744,
+      "imax": 170
+    },
+    "DY": {
+      "min": -0.3175545535313052,
+      "imin": 18080,
+      "max": 0.317635334906752,
+      "imax": 18400
+    },
+    "DZ": {
+      "min": -337.0721014313322,
+      "imin": 170,
+      "max": 0.04391219940003131,
+      "imax": 29716
+    }
+  },
+  "von_mises_MPa": {
+    "min": 41.43300838057221,
+    "imin": 95035,
+    "max": 6213.004001818932,
+    "imax": 4
+  },
+  "yield_MPa": 250.0,
+  "safety_factor": 0.040238184286829605,
+  "nodes_above_yield_pct": 81.25122419399068,
+  "volume_above_yield_pct": 82.16970680702194
+}

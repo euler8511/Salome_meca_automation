@@ -1,0 +1,49 @@
+DEBUT(LANG='EN')
+
+mesh = LIRE_MAILLAGE(UNITE=20,
+                     VERI_MAIL=_F(VERIF='OUI'))
+
+model = AFFE_MODELE(AFFE=_F(MODELISATION='3D',
+                            PHENOMENE='MECANIQUE',
+                            TOUT='OUI'),
+                    MAILLAGE=mesh)
+
+mater = DEFI_MATERIAU(ELAS=_F(E=200000000000.0,
+                              NU=0.3,
+                              RHO=7850.0))
+
+fieldmat = AFFE_MATERIAU(AFFE=_F(MATER=mater,
+                                 TOUT='OUI'),
+                         MAILLAGE=mesh,
+                         MODELE=model)
+
+fix = AFFE_CHAR_MECA(DDL_IMPO=_F(DX=0.0,
+                                 DY=0.0,
+                                 DZ=0.0,
+                                 GROUP_MA='fix'),
+                     MODELE=model)
+
+load0 = AFFE_CHAR_MECA(FORCE_FACE=_F(FZ=-50000000.0,
+                                     GROUP_MA='load_z'),
+                       MODELE=model)
+
+reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
+                       EXCIT=(_F(CHARGE=fix),
+                              _F(CHARGE=load0)),
+                       MODELE=model)
+
+unnamed = CALC_CHAMP(CRITERES=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+                     RESULTAT=reslin)
+
+IMPR_RESU(RESU=(_F(NOM_CHAM='DEPL',
+                   RESULTAT=reslin),
+                _F(NOM_CHAM=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+                   RESULTAT=unnamed)),
+          UNITE=80)
+
+IMPR_RESU(FORMAT='RESULTAT',
+          RESU=_F(NOM_CHAM='DEPL',
+                  RESULTAT=reslin),
+          UNITE=8)
+
+FIN()

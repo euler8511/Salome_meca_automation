@@ -1,0 +1,2733 @@
+=== EXECUTION LOG ===
+[Salome Batch] Code_Aster 해석 엔진(as_run) 구동 준비...
+대상 프로파일: C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export
+실행 명령: as_run "C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export"
+=== as_run STDOUT/STDERR ===
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>echo OFF 
+Active code page: 65001
+
+>>> 2026/11/19-22:13:03.204  [start@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\main.py:71]
+Command line run on 'ghchoi-PC'
+
+using python executable 'C:\Users\ghchoi\AppData\Local\code_aster\v2023\Python37\python.exe' :
+
+['as_run',
+ 'C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export']
+
+>>> 2026/11/19-22:13:03.206  [__init__@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:195]
+AsterSystem param :
+
+{'remote_copy_protocol': 'SCP', 'remote_shell_protocol': 'SSH'}
+
+>>> 2026/11/19-22:13:03.207  [GetMemInfo@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:949]
+GetMemInfo 'memtotal' returns : None
+
+>>> 2026/11/19-22:13:03.217  [GetCpuInfo@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:928]
+GetCpuInfo 'numcpu' returns : 12
+
+>>> 2026/11/19-22:13:03.218  [get_limits@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\common_func.py:177]
+Limits returned :
+
+{'interactif_memmax': 9999999,
+ 'interactif_mpi_nbpmax': 32,
+ 'interactif_nbpmax': 12,
+ 'interactif_tpsmax': '9999:00:00'}
+
+>>> 2026/11/19-22:13:03.219  [GetMemInfo@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:949]
+GetMemInfo 'memtotal' returns : None
+
+>>> 2026/11/19-22:13:03.220  [get_limits@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\common_func.py:177]
+Limits returned :
+
+{'batch_memmax': 9999999,
+ 'batch_mpi_nbpmax': 32,
+ 'batch_nbpmax': 12,
+ 'batch_tpsmax': '9999:00:00'}
+
+>>> 2026/11/19-22:13:03.220  [PostConf@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\run.py:583]
+installation dirs (aster_root, confdir, localedir, LANG)
+
+C:\Users\ghchoi\AppData\Local\code_aster\v2023
+
+C:\Users\ghchoi\AppData\Local\code_aster\v2023\etc\codeaster
+
+C:\Users\ghchoi\AppData\Local\code_aster\v2023\share\locale
+
+en_US.UTF-8
+
+>>> 2026/11/19-22:13:03.222  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:152]
+source list : ('C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export',)
+
+destination : C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843
+
+>>> 2026/11/19-22:13:03.223  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:152]
+cmd :
+
+copy "C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export" "C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843"
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:13:03.247  [_dbg@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\profil.py:46]
+P time_limit: 3600.0    P tpsjob: 61    A tpmax: 3600.0
+
+>>> 2026/11/19-22:13:03.250  [_dbg@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\profil.py:46]
+P time_limit: 3600.0    P tpsjob: 61    A tpmax: 3600.0
+
+>>> 2026/11/19-22:13:03.250  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:161]
+Input export : C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843
+
+AsterProfil object   = 0x26d97f6f5c0
+
+.filename            = C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843
+
+P actions make_etude
+
+P debug nodebug
+
+P mode interactif
+
+P ncpus 1
+
+P nomjob analysis
+
+P time_limit 3600.0
+
+P tpsjob 61
+
+P version stable
+
+A args 
+
+A memjeveux 1024.0
+
+A tpmax 3600.0
+
+F comm C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.comm D  1
+
+F mmed C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\mesh.med D  20
+
+F mess C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.mess R  6
+
+F resu C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.resu R  8
+
+F rmed C:\Users\ghchoi\Desktop\Anti
+
+[...]
+
+>>> 2026/11/19-22:13:03.254  [AsterBuild@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1421]
+version supports: ('nosuperv', 'use_numthreads', 'noresu', 'nocopy', 'orbinitref', 'waf')
+
+>>> 2026/11/19-22:13:03.255  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:13:03.256  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:867]
+cmd :
+
+cmd.exe /c set
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:13:03.290  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:868]
+env_init
+
+ALLUSERSPROFILE=C:\ProgramData
+
+APPDATA=C:\Users\ghchoi\AppData\Roaming
+
+ASTER_ROOT=C:\Users\ghchoi\AppData\Local\code_aster\v2023
+
+ASTER_TMPDIR=C:\Users\ghchoi\AppData\Local\Temp
+
+ASTER_VERSION_DIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster
+
+BUNDLED_DEBUGPY_PATH=c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\libs\debugpy
+
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_29128_OMVLINJQIEWDIINP
+
+CMAPDIR=C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\CMap
+
+COLORTERM=truecolor
+
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+
+COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+
+COMMONPROGRAMW6432=C:\Program Files\Common Files
+
+COMPUTERNAME=GHCHOI-PC
+
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+
+COPILOT_DEBUG_NONCE=f3cfff8e83853587820094fc0bb83e37
+
+DEBUGPY_RUNNING=true
+
+DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+
+FPS_BROWSER_USER_PROFILE_STRING=Default
+
+FP_NO_HOST_CHECK=NO
+
+GIT_ASKPASS=c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass.sh
+
+HOME=C:\Users\ghchoi
+
+HOMEDRIVE=C:
+
+HOMEPATH=\Users\ghchoi
+
+LANG=en_US.UTF-8
+
+LIBRARY_PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\lib64
+
+LOCALAPPDATA=C:\Users\ghchoi\AppData\Local
+
+LOGONSERVER=\\GHCHOI-PC
+
+NUMBER_OF_PROCESSORS=12
+
+ONEDRIVE=C:\Users\ghchoi\OneDrive
+
+OS=Windows_NT
+
+OUTILS=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils
+
+OUT_DIR_PATH=C:\Users\ghchoi\Desktop\v2023\
+
+PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\bin;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS;C:\Users\ghchoi\Desktop\v2023\W64\qt\bin;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\lib\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\bin\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin;C:\Users\ghchoi\Desktop\v2023\W64\Python\Scripts;C:\Users\ghchoi\Desktop\v2023\W64\Python\libs;C:\Users\ghchoi\Desktop\v2023\W64\Python;C:\Users\ghchoi\Desktop\python projects\Salome_meca_automation\.venv\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\WSL\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\ghchoi\AppData\Local\Microsoft\WindowsApps;C:\Users\ghchoi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\ghchoi\ffmpeg\bin;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ghchoi\AppData\Local\Programs\Antigravity\bin;C:\Users\ghchoi\AppData\Roaming\npm;C:\Users\ghchoi\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim
+
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+
+PROCESSOR_ARCHITECTURE=AMD64
+
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+
+PROCESSOR_LEVEL=23
+
+PROCESSOR_REVISION=0101
+
+PROGRAMDATA=C:\ProgramData
+
+PROGRAMFILES=C:\Program Files
+
+PROGRAMFILES(X86)=C:\Program Files (x86)
+
+PROGRAMW6432=C:\Program Files
+
+PROMPT=(.venv) $P$G
+
+PSMODULEPATH=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+
+PUBLIC=C:\Users\Public
+
+PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;
+
+PYDEVD_DISABLE_FILE_VALIDATION=1
+
+PYDEVD_USE_FRAME_EVAL=NO
+
+PYTHONEXECUTABLE=python.exe
+
+PYTHONIOENCODING=UTF-8
+
+PYTHONSTARTUP=c:\Users\ghchoi\AppData\Roaming\Code\User\workspaceStorage\9b26f19f128370d554d3af8895e2fd0f\ms-python.python\pythonrc.py
+
+PYTHONUNBUFFERED=1
+
+SALOME_GUI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\\W64\GUI\bin\salome
+
+SESSIONNAME=Console
+
+SYSTEMDRIVE=C:
+
+SYSTEMROOT=C:\WINDOWS
+
+TEMP=C:\Users\ghchoi\AppData\Local\Temp
+
+TERM_PROGRAM=vscode
+
+TERM_PROGRAM_VERSION=1.144.0
+
+TMP=C:\Users\ghchoi\AppData\Local\Temp
+
+TMPDIR=C:\Users\Public\Documents\ESTsoft\CreatorTemp
+
+USERDOMAIN=ghchoi-PC
+
+USERDOMAIN_ROAMINGPROFILE=ghchoi-PC
+
+USERNAME=ghchoi
+
+USERPROFILE=C:\Users\ghchoi
+
+VIRTUAL_ENV=C:\Users\ghchoi\Desktop\python projects\Salome_meca_automation\.venv
+
+VIRTUAL_ENV_PROMPT=.venv
+
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-5e25a3a8c67ace67.txt
+
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass-main.js
+
+VSCODE_GIT_ASKPASS_NODE=C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-43add77132-sock
+
+VSCODE_NONCE=4d14eadc-b02d-4366-b4b5-08058dd0d945
+
+WINDIR=C:\WINDOWS
+
+WINDOWS_TRACING_FLAGS=3
+
+WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log
+
+_OLD_VIRTUAL_PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\WSL\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\ghchoi\AppData\Local\Microsoft\WindowsApps;C:\Users\ghchoi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\ghchoi\ffmpeg\bin;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ghchoi\AppData\Local\Programs\Antigravity\bin;C:\Users\ghchoi\AppData\Roaming\npm;C:\Users\ghchoi\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim
+
+_OLD_VIRTUAL_PROMPT=$P$G
+
+OMNIORB_USER_PATH=C:\Users\ghchoi\AppData\Roaming
+
+PRODUCT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\
+
+SALOME_TRACE=local
+
+SALOME_MODULES=CIVIL_MASTER,ASTERSTUDY,SHAPER,SHAPERSTUDY,GEOM,SMESH,PARAVIS,YACS,JOBMANAGER,FIELDS,HEXABLOCK,PYHELLO,EFICAS,ADAO,HELLO
+
+SALOME_TMP_DIR=C:\Users\ghchoi\AppData\Roaming
+
+SALOME_MODULES_ORDER=SHAPER:SHAPERSTUDY:GEOM:SMESH
+
+PYTHONHOME=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37
+
+PYTHON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTHON_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTHON_VERSION=3.6
+
+PYTHON_INCLUDE=C:\Users\ghchoi\Desktop\v2023\W64\Python\include
+
+PYTHONPATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\lib\python3.7\site-packages
+
+PYTHON_SITE_PACKAGES=C:\Users\ghchoi\Desktop\v2023\W64\Python\lib\site-packages
+
+PYTHONBIN=C:\Users\ghchoi\Desktop\v2023\W64\Python\python.exe
+
+PYTHON_LIBDIR=lib\python3.6\site-packages
+
+EIGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\eigen
+
+EIGEN3_DIR=C:\Users\ghchoi\Desktop\v2023\W64\eigen
+
+EXPAT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EXPAT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+INCLUDE=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\include;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIB=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib;C:\Users\ghchoi\Desktop\v2023\W64\qt\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+ZLIB_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+ZLIB_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIBPNG_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBPNG_BINDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+LIBPNG_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+LIBPNG_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+PNG_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+PNG_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIBXML_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBXML2_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBJPEG_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBJPEG_BINDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+GRAPHVIZROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GRAPHVIZ_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+DOT_PATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+OMNIORB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\omniORB
+
+OMNIORBPY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\omniORB
+
+LICENCE_FILE=\\titania\home_projet\salome-public\prerequis\LICENCE\libSalomeMeshGemsKeyGenerator
+
+SALOME_MG_KEYGEN_LIB_PATH=\\titania\home_projet\salome-public\prerequis\LICENCE\libSalomeMeshGemsKeyGenerator-2.14-4.dll
+
+MESHGEMSHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MESHGEMS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PYPARSING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+FREETYPEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREETYPE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREETYPE_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+FREETYPE_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+FREETYPE_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CPLUS_INCLUDE_PATH=C:\Users\ghchoi\Desktop\v2023\W64\sip\include\python3.6;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\freetype
+
+QTDIR=C:\Users\ghchoi\Desktop\v2023\W64\qt
+
+QT5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\qt
+
+QT_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\qt\plugins
+
+QT_QPA_PLATFORM_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\qt\plugins
+
+QWTHOME=C:\Users\ghchoi\Desktop\v2023\W64\qwt
+
+QWT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\qwt
+
+PMML_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PMML_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LAPACKHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LAPACK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LAPACK_SRC=C:\Users\ghchoi\Desktop\v2023\W64\EXT\SRC
+
+BLAS_SRC=C:\Users\ghchoi\Desktop\v2023\W64\EXT\BLAS\SRC
+
+SETUPTOOLDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SETUPTOOLS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYGMENTS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYGMENTSDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+MARKUPSAFE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+JINJADIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+JINJA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DOCUTILSDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DOCUTILS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXCONTRIB_WEBSUPPORT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SIX_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PACKAGING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CHARDET_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+IDNA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CERTIFI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+REQUESTS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+IMAGESIZE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+ALABASTER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTZ_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+BABEL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SNOWBALLSTEMMER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINX_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINX_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CYTHON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OPENCV_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\opencv;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\opencv2
+
+BOOSTDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\boost-1_67
+
+BOOST_INCLUDEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\boost-1_67
+
+BOOST_VERSION=1.67.0
+
+BOOST_VERSION_MAJORMINOR=1.67
+
+BOOST_LIBRARY_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+BOOST_LIBRARYDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+HDF5HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+HDF5_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+HDF5_VERSION=1.10.3
+
+CLICK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+COLORAMA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXINTL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXINTL_EXECUTABLE=C:\Users\ghchoi\Desktop\v2023\W64\Python\Scripts\sphinx-build.exe
+
+PTHREAD_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\pthreads
+
+PTHREAD_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib
+
+PTHREAD_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib
+
+PTHREAD_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\include
+
+LIBBATCH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PSUTIL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+KERNEL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\KERNEL
+
+TOML_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYQT_SIPS_DIR=%PYQTDIR%
+
+SIPDIR=C:\Users\ghchoi\Desktop\v2023\W64\sip
+
+SIP_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\sip
+
+PYQTDIR=C:\Users\ghchoi\Desktop\v2023\W64\PyQt
+
+PYQT5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PyQt
+
+PYQT_SIPS=C:\Users\ghchoi\Desktop\v2023\W64\PyQt\sip
+
+PYUIC5=C:\Users\ghchoi\Desktop\v2023\W64\PyQt\bin\pyuic5.bat
+
+FREEIMAGEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREEIMAGE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TBB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TBB_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TBB_TARGET_ARCH=intel64
+
+TBB_TARGET_VS=14_uwp
+
+CSF_OCCTBINPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\win64\vc14\bin
+
+CSF_OCCTLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\win64\vc14\lib
+
+CSF_OCCTINCLUDEPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\inc
+
+CSF_OCCTRESOURCEPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src
+
+CSF_OCCTDATAPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\data
+
+CSF_OCCTSAMPLESPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\samples
+
+CSF_OCCTTESTSPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\tests
+
+CSF_OCCTDOCPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\doc
+
+CSF_SHMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\SHMessage
+
+CSF_MDTVTEXTURESDIRECTORY=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\Textures
+
+CSF_SHADERSDIRECTORY=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\Shaders
+
+CSF_XSMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSMessage
+
+CSF_TOBJMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\TObj
+
+CSF_STANDARDDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_PLUGINDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_XCAFDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_TOBJDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_STANDARDLITEDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_IGESDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSTEPResource
+
+CSF_STEPDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSTEPResource
+
+CSF_XMLOCAFRESOURCE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XmlOcafResource
+
+CSF_MIGRATION_TYPES=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource\MigrationSheet.txt
+
+CSF_UNITSDEFINITION=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\UnitsAPI\Units.dat
+
+MMGT_CLEAR=1
+
+MMGT_REENTRANT=1
+
+CSF_LANGUAGE=us
+
+CASROOT=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+CAS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+OPENCASCADE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+CGNS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+CGNS_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CGNS_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\libcgnsdll.lib
+
+ISPC_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EMBREE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EMBREE_VERSION=3.12.2
+
+EMBREE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+RKCOMMON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+RKCOMMON_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\rkcommon-1.5.1
+
+OPENVKL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENVKL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\openvkl-0.11.0
+
+OSPRAY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OSPRAY_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\ospray-2.4.0
+
+OSPRAY_VERSION=2.4.0
+
+NLOPT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+DILL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DILL_VERSION=0.3.4
+
+OT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OT_HOME=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OT_VERSION=1.19
+
+LD_LIBRARY_PATH=C:\Users\ghchoi\Desktop\v2023\W64\Python\lib
+
+DATEUTIL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CYCLER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+KIWISOLVER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+MATPLOTLIB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MPLCONFIGDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PVHOME=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+VTKHOME=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+PVVERSION=5.11
+
+PARAVIEW_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+PARAVIEW_VERSION=5.11
+
+PARAVIEW_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView\lib\paraview-5.11
+
+PV_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS\lib\paraview;C:\Users\ghchoi\Desktop\v2023\W64\ParaView\bin\paraview-5.11;C:\Users\ghchoi\Desktop\v2023\W64\PARAVISADDONS\lib\paraview
+
+VTK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+VTK_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView\lib\cmake\paraview-5.11
+
+SPHINX_RTD_THEME_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+GUI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GUI
+
+SALOMEAPPCONFIG=C:\Users\ghchoi\Desktop\v2023\W64\SALOME\share\salome\resources\salome;C:\Users\ghchoi\Desktop\v2023\W64\GUI\share\salome\resources\gui;C:\Users\ghchoi\Desktop\v2023\W64\GEOM\share\salome\resources\geom;C:\Users\ghchoi\Desktop\v2023\W64\FIELDS\share\salome\resources\fields;C:\Users\ghchoi\Desktop\v2023\W64\SHAPER\share\salome\resources\shaper;C:\Users\ghchoi\Desktop\v2023\W64\SHAPERSTUDY\share\salome\resources\shaperstudy;C:\Users\ghchoi\Desktop\v2023\W64\SMESH\share\salome\resources\smesh;C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS\share\salome\resources\paravis;C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCK\share\salome\resources\hexablock;C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCKPLUGIN\share\salome\resources\hexablockplugin;C:\Users\ghchoi\Desktop\v2023\W64\PYHELLO\share\salome\resources\pyhello;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS\share\salome\resources\eficas;C:\Users\ghchoi\Desktop\v2023\W64\YACS\share\salome\resources\yacs;C:\Users\ghchoi\Desktop\v2023\W64\ADAO\share\salome\resources\adao;C:\Users\ghchoi\Desktop\v2023\W64\HYBRIDPLUGIN\share\salome\resources\hybridplugin;C:\Users\ghchoi\Desktop\v2023\W64\HELLO\share\salome\resources\hello;C:\Users\ghchoi\Desktop\v2023\W64\JOBMANAGER\share\salome\resources\jobmanager;C:\Users\ghchoi\Desktop\v2023\W64\BLSURFPLUGIN\share\salome\resources\blsurfplugin;C:\Users\ghchoi\Desktop\v2023\W64\GHS3DPLUGIN\share\salome\resources\ghs3dplugin;C:\Users\ghchoi\Desktop\v2023\W64\GMSHPLUGIN\share\salome\resources\gmshplugin;C:\Users\ghchoi\Desktop\v2023\W64\HexoticPLUGIN\share\salome\resources\hexoticplugin;C:\Users\ghchoi\Desktop\v2023\W64\NETGENPLUGIN\share\salome\resources\netgenplugin;C:\Users\ghchoi\Desktop\v2023\W64\CALCULATOR\share\salome\resources\calculator;C:\Users\ghchoi\Desktop\v2023\W64\ASTERSTUDY\share\salome\resources\asterstudy;C:\Users\ghchoi\Desktop\v2023\W64\PIMOD\share\salome\resources\pimod;C:\Users\ghchoi\Desktop\v2023\W64\PIMOD\share\salome\resources\civil_master
+
+GEOM_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GEOM
+
+PARALLEL_VISU=1
+
+GEOM_PLUGINSLIST=BREPPlugin:STEPPlugin:IGESPlugin:STLPlugin:XAOPlugin:VTKPlugin:AdvancedGEOM
+
+CSF_SHHEALINGDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\GEOM\share\salome\resources\geom
+
+SWIG_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\swig
+
+SWIG_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\swig
+
+SWIG_LIB=C:\Users\ghchoi\Desktop\v2023\W64\swig\Lib
+
+SCIPY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PILLOW_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PLANEGCS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\planegcs
+
+TCL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TCLHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TKHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TCL_SHORT_VERSION=8.6
+
+TK_SHORT_VERSION=8.6
+
+TCLLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tcl8.6 C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TKLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tk8.6 C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TCL_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tcl8.6
+
+TK_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tk8.6
+
+NETGENHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+NETGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+NETGEN_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+NETGEN_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+NETGEN_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+NETGEN_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+NETGEN_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+MED3HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MED2HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MEDFILE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METISDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METIS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METIS_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+METIS_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+METIS_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+METIS_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CONFIGURATION_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\SOURCES\CONFIGURATION
+
+CONFIGURATION_SRC_DIR=C:\Users\ghchoi\Desktop\v2023\SOURCES\CONFIGURATION
+
+MEDCOUPLING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\MEDCOUPLING
+
+FIELDS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\FIELDS
+
+SHAPER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SHAPER
+
+SHAPERSTUDY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SHAPERSTUDY
+
+SMESH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SMESH
+
+SMESH_MESHERSLIST=NETGENPlugin;HexoticPLUGIN;GMSHPlugin;GHS3DPlugin;BLSURFPlugin;HYBRIDPlugin;HEXABLOCKPlugin;StdMeshers
+
+PARAVIS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS
+
+SALOME_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SALOME
+
+HEXABLOCK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCK
+
+HEXABLOCKPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCKPLUGIN
+
+PYHELLO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PYHELLO
+
+EFICAS_TOOLS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS
+
+EFICAS_TOOLS_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS
+
+EFICAS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS
+
+EFICAS_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS
+
+YACS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\YACS
+
+ADAO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+ADAO_ENGINE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+CURRENT_SOFTWARE_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+HYBRIDPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HYBRIDPLUGIN
+
+HELLO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HELLO
+
+JOBMANAGER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\JOBMANAGER
+
+BLSURFPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\BLSURFPLUGIN
+
+GHS3DPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GHS3DPLUGIN
+
+GMSHHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GMSH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GMSHPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GMSHPLUGIN
+
+HEXOTICPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HexoticPLUGIN
+
+NETGENPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\NETGENPLUGIN
+
+DOCUMENTATION_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\DOCUMENTATION
+
+PYREADLINE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SAMPLES_SRC_DIR=C:\Users\ghchoi\Desktop\v2023\\SOURCES\SAMPLES
+
+DATA_DIR=C:\Users\ghchoi\Desktop\v2023\\SOURCES\SAMPLES
+
+YACSGENROOT=C:\Users\ghchoi\Desktop\v2023\W64\YACSGEN
+
+YACSGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\YACSGEN
+
+COMPONENT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\COMPONENT
+
+PARAVISADDONS=C:\Users\ghchoi\Desktop\v2023\W64\PARAVISADDONS
+
+CALCULATOR_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CALCULATOR
+
+STATICMESHPLUGIN=C:\Users\ghchoi\Desktop\v2023\W64\StaticMeshPlugin
+
+PYCALCULATOR_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PYCALCULATOR
+
+ASTERSTUDY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ASTERSTUDY
+
+ASTER_ROOT_DIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..
+
+ASTER_STABLE=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5
+
+PIMOD_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PIMOD
+
+CIVIL_MASTER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PIMOD
+
+MSVC_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+CMAKE_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\cmake
+
+APPLI=C:\Users\ghchoi\Desktop\v2023\salome
+
+ABSOLUTE_APPLI_PATH=C:\Users\ghchoi\Desktop\v2023\W64\SALOME
+
+
+
+>>> 2026/11/19-22:13:03.292  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:13:03.292  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:877]
+cmd :
+
+cmd.exe /c ""C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster\profile.bat" && set"
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:13:03.354  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:878]
+env_prof
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set PYTHONPATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster;C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\lib\python3.7\site-packages 
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set ASTER_DATADIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster 
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set ASTER_LIBDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster 
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set ASTER_LOCALEDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\locale\aster 
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set ASTER_ELEMENTSDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster 
+
+
+
+(.venv) C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation>set PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\bin;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS;C:\Users\ghchoi\Desktop\v2023\W64\qt\bin;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\lib\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\bin\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin;C:\Users\ghchoi\Desktop\v2023\W64\Python\Scripts;C:\Users\ghchoi\Desktop\v2023\W64\Python\libs;C:\Users\ghchoi\Desktop\v2023\W64\Python;C:\Users\ghchoi\Desktop\python projects\Salome_meca_automation\.venv\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\WSL\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\ghchoi\AppData\Local\Microsoft\WindowsApps;C:\Users\ghchoi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\ghchoi\ffmpeg\bin;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ghchoi\AppData\Local\Programs\Antigravity\bin;C:\Users\ghchoi\AppData\Roaming\npm;C:\Users\ghchoi\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim 
+
+ALLUSERSPROFILE=C:\ProgramData
+
+APPDATA=C:\Users\ghchoi\AppData\Roaming
+
+ASTER_DATADIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster
+
+ASTER_ELEMENTSDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster
+
+ASTER_LIBDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster
+
+ASTER_LOCALEDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\locale\aster
+
+ASTER_ROOT=C:\Users\ghchoi\AppData\Local\code_aster\v2023
+
+ASTER_TMPDIR=C:\Users\ghchoi\AppData\Local\Temp
+
+ASTER_VERSION_DIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster
+
+BUNDLED_DEBUGPY_PATH=c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\libs\debugpy
+
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_29128_OMVLINJQIEWDIINP
+
+CMAPDIR=C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\CMap
+
+COLORTERM=truecolor
+
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+
+COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+
+COMMONPROGRAMW6432=C:\Program Files\Common Files
+
+COMPUTERNAME=GHCHOI-PC
+
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+
+COPILOT_DEBUG_NONCE=f3cfff8e83853587820094fc0bb83e37
+
+DEBUGPY_RUNNING=true
+
+DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+
+FPS_BROWSER_USER_PROFILE_STRING=Default
+
+FP_NO_HOST_CHECK=NO
+
+GIT_ASKPASS=c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass.sh
+
+HOME=C:\Users\ghchoi
+
+HOMEDRIVE=C:
+
+HOMEPATH=\Users\ghchoi
+
+LANG=en_US.UTF-8
+
+LIBRARY_PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\lib64
+
+LOCALAPPDATA=C:\Users\ghchoi\AppData\Local
+
+LOGONSERVER=\\GHCHOI-PC
+
+NUMBER_OF_PROCESSORS=12
+
+ONEDRIVE=C:\Users\ghchoi\OneDrive
+
+OS=Windows_NT
+
+OUTILS=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils
+
+OUT_DIR_PATH=C:\Users\ghchoi\Desktop\v2023\
+
+PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\bin;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS;C:\Users\ghchoi\Desktop\v2023\W64\qt\bin;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\lib\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\bin\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin;C:\Users\ghchoi\Desktop\v2023\W64\Python\Scripts;C:\Users\ghchoi\Desktop\v2023\W64\Python\libs;C:\Users\ghchoi\Desktop\v2023\W64\Python;C:\Users\ghchoi\Desktop\python projects\Salome_meca_automation\.venv\Scripts;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\WSL\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\ghchoi\AppData\Local\Microsoft\WindowsApps;C:\Users\ghchoi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\ghchoi\ffmpeg\bin;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ghchoi\AppData\Local\Programs\Antigravity\bin;C:\Users\ghchoi\AppData\Roaming\npm;C:\Users\ghchoi\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim
+
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+
+PROCESSOR_ARCHITECTURE=AMD64
+
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 1 Stepping 1, AuthenticAMD
+
+PROCESSOR_LEVEL=23
+
+PROCESSOR_REVISION=0101
+
+PROGRAMDATA=C:\ProgramData
+
+PROGRAMFILES=C:\Program Files
+
+PROGRAMFILES(X86)=C:\Program Files (x86)
+
+PROGRAMW6432=C:\Program Files
+
+PROMPT=(.venv) $P$G
+
+PSMODULEPATH=C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+
+PUBLIC=C:\Users\Public
+
+PYCHARM COMMUNITY EDITION=C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;
+
+PYDEVD_DISABLE_FILE_VALIDATION=1
+
+PYDEVD_USE_FRAME_EVAL=NO
+
+PYTHONEXECUTABLE=python.exe
+
+PYTHONIOENCODING=UTF-8
+
+PYTHONSTARTUP=c:\Users\ghchoi\AppData\Roaming\Code\User\workspaceStorage\9b26f19f128370d554d3af8895e2fd0f\ms-python.python\pythonrc.py
+
+PYTHONUNBUFFERED=1
+
+SALOME_GUI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\\W64\GUI\bin\salome
+
+SESSIONNAME=Console
+
+SYSTEMDRIVE=C:
+
+SYSTEMROOT=C:\WINDOWS
+
+TEMP=C:\Users\ghchoi\AppData\Local\Temp
+
+TERM_PROGRAM=vscode
+
+TERM_PROGRAM_VERSION=1.144.0
+
+TMP=C:\Users\ghchoi\AppData\Local\Temp
+
+TMPDIR=C:\Users\Public\Documents\ESTsoft\CreatorTemp
+
+USERDOMAIN=ghchoi-PC
+
+USERDOMAIN_ROAMINGPROFILE=ghchoi-PC
+
+USERNAME=ghchoi
+
+USERPROFILE=C:\Users\ghchoi
+
+VIRTUAL_ENV=C:\Users\ghchoi\Desktop\python projects\Salome_meca_automation\.venv
+
+VIRTUAL_ENV_PROMPT=.venv
+
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\.noConfigDebugAdapterEndpoints\endpoint-5e25a3a8c67ace67.txt
+
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass-main.js
+
+VSCODE_GIT_ASKPASS_NODE=C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-43add77132-sock
+
+VSCODE_NONCE=4d14eadc-b02d-4366-b4b5-08058dd0d945
+
+WINDIR=C:\WINDOWS
+
+WINDOWS_TRACING_FLAGS=3
+
+WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log
+
+_OLD_VIRTUAL_PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NAT Service;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web;C:\Program Files (x86)\ePapyrus\Papyrus-PlugIn-web\Addins;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\WSL\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python313\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python312\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python38\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\;C:\Users\ghchoi\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\ghchoi\AppData\Local\Microsoft\WindowsApps;C:\Users\ghchoi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\ghchoi\ffmpeg\bin;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ghchoi\AppData\Local\Programs\Antigravity\bin;C:\Users\ghchoi\AppData\Roaming\npm;C:\Users\ghchoi\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\ghchoi\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\ghchoi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\ghchoi\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim
+
+_OLD_VIRTUAL_PROMPT=$P$G
+
+OMNIORB_USER_PATH=C:\Users\ghchoi\AppData\Roaming
+
+PRODUCT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\
+
+SALOME_TRACE=local
+
+SALOME_MODULES=CIVIL_MASTER,ASTERSTUDY,SHAPER,SHAPERSTUDY,GEOM,SMESH,PARAVIS,YACS,JOBMANAGER,FIELDS,HEXABLOCK,PYHELLO,EFICAS,ADAO,HELLO
+
+SALOME_TMP_DIR=C:\Users\ghchoi\AppData\Roaming
+
+SALOME_MODULES_ORDER=SHAPER:SHAPERSTUDY:GEOM:SMESH
+
+PYTHONHOME=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37
+
+PYTHON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTHON_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTHON_VERSION=3.6
+
+PYTHON_INCLUDE=C:\Users\ghchoi\Desktop\v2023\W64\Python\include
+
+PYTHONPATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster;C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\lib\python3.7\site-packages
+
+PYTHON_SITE_PACKAGES=C:\Users\ghchoi\Desktop\v2023\W64\Python\lib\site-packages
+
+PYTHONBIN=C:\Users\ghchoi\Desktop\v2023\W64\Python\python.exe
+
+PYTHON_LIBDIR=lib\python3.6\site-packages
+
+EIGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\eigen
+
+EIGEN3_DIR=C:\Users\ghchoi\Desktop\v2023\W64\eigen
+
+EXPAT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EXPAT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+INCLUDE=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\include;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIB=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib;C:\Users\ghchoi\Desktop\v2023\W64\qt\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+ZLIB_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+ZLIB_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+ZLIB_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIBPNG_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBPNG_BINDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+LIBPNG_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+LIBPNG_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+PNG_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+PNG_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LIBXML_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBXML2_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBJPEG_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBJPEG_BINDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+GRAPHVIZROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GRAPHVIZ_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+DOT_PATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+OMNIORB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\omniORB
+
+OMNIORBPY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\omniORB
+
+LICENCE_FILE=\\titania\home_projet\salome-public\prerequis\LICENCE\libSalomeMeshGemsKeyGenerator
+
+SALOME_MG_KEYGEN_LIB_PATH=\\titania\home_projet\salome-public\prerequis\LICENCE\libSalomeMeshGemsKeyGenerator-2.14-4.dll
+
+MESHGEMSHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MESHGEMS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PYPARSING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+FREETYPEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREETYPE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREETYPE_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+FREETYPE_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+FREETYPE_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CPLUS_INCLUDE_PATH=C:\Users\ghchoi\Desktop\v2023\W64\sip\include\python3.6;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\freetype
+
+QTDIR=C:\Users\ghchoi\Desktop\v2023\W64\qt
+
+QT5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\qt
+
+QT_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\qt\plugins
+
+QT_QPA_PLATFORM_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\qt\plugins
+
+QWTHOME=C:\Users\ghchoi\Desktop\v2023\W64\qwt
+
+QWT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\qwt
+
+PMML_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PMML_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+LAPACKHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LAPACK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LAPACK_SRC=C:\Users\ghchoi\Desktop\v2023\W64\EXT\SRC
+
+BLAS_SRC=C:\Users\ghchoi\Desktop\v2023\W64\EXT\BLAS\SRC
+
+SETUPTOOLDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SETUPTOOLS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYGMENTS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYGMENTSDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+MARKUPSAFE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+JINJADIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+JINJA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DOCUTILSDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DOCUTILS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXCONTRIB_WEBSUPPORT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SIX_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PACKAGING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CHARDET_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+IDNA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CERTIFI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+REQUESTS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+IMAGESIZE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+ALABASTER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYTZ_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+BABEL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SNOWBALLSTEMMER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXDIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINX_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINX_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CYTHON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OPENCV_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENCV_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\opencv;C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\opencv2
+
+BOOSTDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+BOOST_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\boost-1_67
+
+BOOST_INCLUDEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include\boost-1_67
+
+BOOST_VERSION=1.67.0
+
+BOOST_VERSION_MAJORMINOR=1.67
+
+BOOST_LIBRARY_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+BOOST_LIBRARYDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+HDF5HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+HDF5_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+HDF5_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+HDF5_VERSION=1.10.3
+
+CLICK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+COLORAMA_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXINTL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SPHINXINTL_EXECUTABLE=C:\Users\ghchoi\Desktop\v2023\W64\Python\Scripts\sphinx-build.exe
+
+PTHREAD_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\pthreads
+
+PTHREAD_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib
+
+PTHREAD_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\lib
+
+PTHREAD_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\pthreads\include
+
+LIBBATCH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PSUTIL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+KERNEL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\KERNEL
+
+TOML_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PYQT_SIPS_DIR=%PYQTDIR%
+
+SIPDIR=C:\Users\ghchoi\Desktop\v2023\W64\sip
+
+SIP_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\sip
+
+PYQTDIR=C:\Users\ghchoi\Desktop\v2023\W64\PyQt
+
+PYQT5_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PyQt
+
+PYQT_SIPS=C:\Users\ghchoi\Desktop\v2023\W64\PyQt\sip
+
+PYUIC5=C:\Users\ghchoi\Desktop\v2023\W64\PyQt\bin\pyuic5.bat
+
+FREEIMAGEDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+FREEIMAGE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+LIBS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TBB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TBB_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TBB_TARGET_ARCH=intel64
+
+TBB_TARGET_VS=14_uwp
+
+CSF_OCCTBINPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\win64\vc14\bin
+
+CSF_OCCTLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\win64\vc14\lib
+
+CSF_OCCTINCLUDEPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\inc
+
+CSF_OCCTRESOURCEPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src
+
+CSF_OCCTDATAPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\data
+
+CSF_OCCTSAMPLESPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\samples
+
+CSF_OCCTTESTSPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\tests
+
+CSF_OCCTDOCPATH=C:\Users\ghchoi\Desktop\v2023\W64\CAS\doc
+
+CSF_SHMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\SHMessage
+
+CSF_MDTVTEXTURESDIRECTORY=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\Textures
+
+CSF_SHADERSDIRECTORY=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\Shaders
+
+CSF_XSMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSMessage
+
+CSF_TOBJMESSAGE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\TObj
+
+CSF_STANDARDDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_PLUGINDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_XCAFDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_TOBJDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_STANDARDLITEDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource
+
+CSF_IGESDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSTEPResource
+
+CSF_STEPDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XSTEPResource
+
+CSF_XMLOCAFRESOURCE=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\XmlOcafResource
+
+CSF_MIGRATION_TYPES=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\StdResource\MigrationSheet.txt
+
+CSF_UNITSDEFINITION=C:\Users\ghchoi\Desktop\v2023\W64\CAS\src\UnitsAPI\Units.dat
+
+MMGT_CLEAR=1
+
+MMGT_REENTRANT=1
+
+CSF_LANGUAGE=us
+
+CASROOT=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+CAS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+OPENCASCADE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CAS
+
+CGNS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+CGNS_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CGNS_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\libcgnsdll.lib
+
+ISPC_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EMBREE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+EMBREE_VERSION=3.12.2
+
+EMBREE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+RKCOMMON_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+RKCOMMON_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\rkcommon-1.5.1
+
+OPENVKL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OPENVKL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\openvkl-0.11.0
+
+OSPRAY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+OSPRAY_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\cmake\ospray-2.4.0
+
+OSPRAY_VERSION=2.4.0
+
+NLOPT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+DILL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+DILL_VERSION=0.3.4
+
+OT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OT_HOME=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+OT_VERSION=1.19
+
+LD_LIBRARY_PATH=C:\Users\ghchoi\Desktop\v2023\W64\Python\lib
+
+DATEUTIL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+CYCLER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+KIWISOLVER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+MATPLOTLIB_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MPLCONFIGDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+PVHOME=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+VTKHOME=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+PVVERSION=5.11
+
+PARAVIEW_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+PARAVIEW_VERSION=5.11
+
+PARAVIEW_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView\lib\paraview-5.11
+
+PV_PLUGIN_PATH=C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS\lib\paraview;C:\Users\ghchoi\Desktop\v2023\W64\ParaView\bin\paraview-5.11;C:\Users\ghchoi\Desktop\v2023\W64\PARAVISADDONS\lib\paraview
+
+VTK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView
+
+VTK_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ParaView\lib\cmake\paraview-5.11
+
+SPHINX_RTD_THEME_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+GUI_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GUI
+
+SALOMEAPPCONFIG=C:\Users\ghchoi\Desktop\v2023\W64\SALOME\share\salome\resources\salome;C:\Users\ghchoi\Desktop\v2023\W64\GUI\share\salome\resources\gui;C:\Users\ghchoi\Desktop\v2023\W64\GEOM\share\salome\resources\geom;C:\Users\ghchoi\Desktop\v2023\W64\FIELDS\share\salome\resources\fields;C:\Users\ghchoi\Desktop\v2023\W64\SHAPER\share\salome\resources\shaper;C:\Users\ghchoi\Desktop\v2023\W64\SHAPERSTUDY\share\salome\resources\shaperstudy;C:\Users\ghchoi\Desktop\v2023\W64\SMESH\share\salome\resources\smesh;C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS\share\salome\resources\paravis;C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCK\share\salome\resources\hexablock;C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCKPLUGIN\share\salome\resources\hexablockplugin;C:\Users\ghchoi\Desktop\v2023\W64\PYHELLO\share\salome\resources\pyhello;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS\share\salome\resources\eficas;C:\Users\ghchoi\Desktop\v2023\W64\YACS\share\salome\resources\yacs;C:\Users\ghchoi\Desktop\v2023\W64\ADAO\share\salome\resources\adao;C:\Users\ghchoi\Desktop\v2023\W64\HYBRIDPLUGIN\share\salome\resources\hybridplugin;C:\Users\ghchoi\Desktop\v2023\W64\HELLO\share\salome\resources\hello;C:\Users\ghchoi\Desktop\v2023\W64\JOBMANAGER\share\salome\resources\jobmanager;C:\Users\ghchoi\Desktop\v2023\W64\BLSURFPLUGIN\share\salome\resources\blsurfplugin;C:\Users\ghchoi\Desktop\v2023\W64\GHS3DPLUGIN\share\salome\resources\ghs3dplugin;C:\Users\ghchoi\Desktop\v2023\W64\GMSHPLUGIN\share\salome\resources\gmshplugin;C:\Users\ghchoi\Desktop\v2023\W64\HexoticPLUGIN\share\salome\resources\hexoticplugin;C:\Users\ghchoi\Desktop\v2023\W64\NETGENPLUGIN\share\salome\resources\netgenplugin;C:\Users\ghchoi\Desktop\v2023\W64\CALCULATOR\share\salome\resources\calculator;C:\Users\ghchoi\Desktop\v2023\W64\ASTERSTUDY\share\salome\resources\asterstudy;C:\Users\ghchoi\Desktop\v2023\W64\PIMOD\share\salome\resources\pimod;C:\Users\ghchoi\Desktop\v2023\W64\PIMOD\share\salome\resources\civil_master
+
+GEOM_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GEOM
+
+PARALLEL_VISU=1
+
+GEOM_PLUGINSLIST=BREPPlugin:STEPPlugin:IGESPlugin:STLPlugin:XAOPlugin:VTKPlugin:AdvancedGEOM
+
+CSF_SHHEALINGDEFAULTS=C:\Users\ghchoi\Desktop\v2023\W64\GEOM\share\salome\resources\geom
+
+SWIG_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\swig
+
+SWIG_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\swig
+
+SWIG_LIB=C:\Users\ghchoi\Desktop\v2023\W64\swig\Lib
+
+SCIPY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PILLOW_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+PLANEGCS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\planegcs
+
+TCL_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TCLHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TKHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+TCL_SHORT_VERSION=8.6
+
+TK_SHORT_VERSION=8.6
+
+TCLLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tcl8.6 C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TKLIBPATH=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tk8.6 C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+TCL_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tcl8.6
+
+TK_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib\tk8.6
+
+NETGENHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+NETGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+NETGEN_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+NETGEN_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+NETGEN_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+NETGEN_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+NETGEN_INCLUDE_DIRS=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+MED3HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MED2HOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+MEDFILE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METISDIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METIS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+METIS_BIN=C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin
+
+METIS_LIBRARY=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+METIS_LIBRARIES=C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib
+
+METIS_INCLUDE_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT\include
+
+CONFIGURATION_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\SOURCES\CONFIGURATION
+
+CONFIGURATION_SRC_DIR=C:\Users\ghchoi\Desktop\v2023\SOURCES\CONFIGURATION
+
+MEDCOUPLING_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\MEDCOUPLING
+
+FIELDS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\FIELDS
+
+SHAPER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SHAPER
+
+SHAPERSTUDY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SHAPERSTUDY
+
+SMESH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SMESH
+
+SMESH_MESHERSLIST=NETGENPlugin;HexoticPLUGIN;GMSHPlugin;GHS3DPlugin;BLSURFPlugin;HYBRIDPlugin;HEXABLOCKPlugin;StdMeshers
+
+PARAVIS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PARAVIS
+
+SALOME_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\SALOME
+
+HEXABLOCK_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCK
+
+HEXABLOCKPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HEXABLOCKPLUGIN
+
+PYHELLO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PYHELLO
+
+EFICAS_TOOLS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS
+
+EFICAS_TOOLS_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS
+
+EFICAS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS
+
+EFICAS_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\EFICAS
+
+YACS_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\YACS
+
+ADAO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+ADAO_ENGINE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+CURRENT_SOFTWARE_INSTALL_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ADAO
+
+HYBRIDPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HYBRIDPLUGIN
+
+HELLO_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HELLO
+
+JOBMANAGER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\JOBMANAGER
+
+BLSURFPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\BLSURFPLUGIN
+
+GHS3DPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GHS3DPLUGIN
+
+GMSHHOME=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GMSH_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+GMSHPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\GMSHPLUGIN
+
+HEXOTICPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\HexoticPLUGIN
+
+NETGENPLUGIN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\NETGENPLUGIN
+
+DOCUMENTATION_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\DOCUMENTATION
+
+PYREADLINE_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\Python
+
+SAMPLES_SRC_DIR=C:\Users\ghchoi\Desktop\v2023\\SOURCES\SAMPLES
+
+DATA_DIR=C:\Users\ghchoi\Desktop\v2023\\SOURCES\SAMPLES
+
+YACSGENROOT=C:\Users\ghchoi\Desktop\v2023\W64\YACSGEN
+
+YACSGEN_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\YACSGEN
+
+COMPONENT_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\COMPONENT
+
+PARAVISADDONS=C:\Users\ghchoi\Desktop\v2023\W64\PARAVISADDONS
+
+CALCULATOR_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\CALCULATOR
+
+STATICMESHPLUGIN=C:\Users\ghchoi\Desktop\v2023\W64\StaticMeshPlugin
+
+PYCALCULATOR_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PYCALCULATOR
+
+ASTERSTUDY_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\ASTERSTUDY
+
+ASTER_ROOT_DIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..
+
+ASTER_STABLE=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5
+
+PIMOD_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PIMOD
+
+CIVIL_MASTER_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\PIMOD
+
+MSVC_ROOT_DIR=C:\Users\ghchoi\Desktop\v2023\W64\EXT
+
+CMAKE_ROOT=C:\Users\ghchoi\Desktop\v2023\W64\cmake
+
+APPLI=C:\Users\ghchoi\Desktop\v2023\salome
+
+ABSOLUTE_APPLI_PATH=C:\Users\ghchoi\Desktop\v2023\W64\SALOME
+
+
+
+>>> 2026/11/19-22:13:03.356  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : ASTER_DATADIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster
+
+>>> 2026/11/19-22:13:03.357  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : ASTER_ELEMENTSDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster
+
+>>> 2026/11/19-22:13:03.358  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : ASTER_LIBDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster
+
+>>> 2026/11/19-22:13:03.359  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : ASTER_LOCALEDIR=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\locale\aster
+
+>>> 2026/11/19-22:13:03.360  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : PATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\Python37;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\outils;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\MinGW\bin;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin;C:\Users\ghchoi\Desktop\v2023\W64\EFICAS_TOOLS;C:\Users\ghchoi\Desktop\v2023\W64\qt\bin;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\lib\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\omniORB\bin\x86_win32;C:\Users\ghchoi\Desktop\v2023\W64\EXT\lib;C:\Users\ghchoi\Desktop\v2023\W64\EXT\bin;C:\Users\ghch
+
+[...]
+
+>>> 2026/11/19-22:13:03.360  [AddToEnv@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:886]
+AddToEnv set : PYTHONPATH=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster;C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\medcoupling\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\med\lib\python3.7\site-packages;C:\Users\ghchoi\AppData\Local\code_aster\v2023\bin\..\lib\python3.7\site-packages
+
+>>> 2026/11/19-22:13:03.363  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:201]
+set_rep_trav() > local=C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843, global=C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843
+
+>>> 2026/11/19-22:13:03.364  [_dbg@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\profil.py:46]
+P time_limit: 3600.0    P tpsjob: 61    A tpmax: 3600.0
+
+>>> 2026/11/19-22:13:03.365  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:208]
+source list : ('C:\\Users\\ghchoi\\AppData\\Local\\Temp\\astk_ghchoi\\ghchoi-ghchoi-PC-profil_astk_6843',)
+
+destination : C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export
+
+>>> 2026/11/19-22:13:03.366  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:208]
+cmd :
+
+copy "C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843" "C:/Users/ghchoi/Desktop/Antigravity/Salome_meca_automation/run_case.export"
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:13:03.386  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:221]
+source list : ('C:\\Users\\ghchoi\\AppData\\Local\\Temp\\astk_ghchoi\\ghchoi-ghchoi-PC-profil_astk_6843',)
+
+destination : C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843\6843.export
+
+>>> 2026/11/19-22:13:03.387  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:221]
+cmd :
+
+copy "C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843" "C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843\6843.export"
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:13:03.407  [RunAster@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execute.py:402]
+Start make_etude/make_env/make_dbg action
+
+
+--------------------------------------------------------------------------------
+
+ Code_Aster execution
+
+
+<INFO> prepare environment in C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843
+
+
+--------------------------------------------------------------------------------
+
+ Copying datas
+
+
+
+>>> 2026/11/19-22:13:03.410  [copyfileD@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:580]
+source list : ('C:\\Users\\ghchoi\\Desktop\\Antigravity\\Salome_meca_automation\\analysis.comm',)
+
+destination : fort.1.1
+
+>>> 2026/11/19-22:13:03.411  [copyfileD@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:580]
+cmd :
+
+copy "C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.comm" "fort.1.1"
+
+background : False
+
+follow_output : False
+copying ...\Salome_meca_automation\analysis.comm...                     
+>>> 2026/11/19-22:13:03.430  [copyfileD@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:580]
+source list : ('C:\\Users\\ghchoi\\Desktop\\Antigravity\\Salome_meca_automation\\mesh.med',)
+
+destination : fort.20
+
+>>> 2026/11/19-22:13:03.431  [copyfileD@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:580]
+cmd :
+
+copy "C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\mesh.med" "fort.20"
+
+background : False
+
+follow_output : False
+copying ...\Salome_meca_automation\mesh.med...                          
+>>> 2026/11/19-22:13:03.554  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:103]
+version supports: waf (True), nosuperv (True), orbinitref (True), numthreads (True)
+<INFO> Parameters : memory 8192 MB - time limit 3600 s
+
+
+--------------------------------------------------------------------------------
+
+ Content of C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843 before execution
+
+
+
+>>> 2026/11/19-22:13:03.557  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:13:03.558  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:285]
+cmd :
+
+ls -la
+
+background : False
+
+follow_output : False
+b''
+
+>>> 2026/11/19-22:13:03.585  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:346]
+source list : ('fort.1.1',)
+
+destination : fort.1
+
+>>> 2026/11/19-22:13:03.586  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:346]
+cmd :
+
+copy "fort.1.1" "fort.1"
+
+background : False
+
+follow_output : False
+cmd ['C:\\Users\\ghchoi\\AppData\\Local\\code_aster\\v2023\\Python37\\python.exe', 'fort.1', '', '--num_job=6843', '--mode=interactif', '--rep_outils=C:\\Users\\ghchoi\\AppData\\Local\\code_aster\\v2023\\outils', '--rep_mat=C:\\Users\\ghchoi\\AppData\\Local\\code_aster\\v2023\\16.5\\share\\aster\\materiau', '--rep_dex=C:\\Users\\ghchoi\\AppData\\Local\\code_aster\\v2023\\16.5\\share\\aster\\datg', '--numthreads=1', '--suivi_batch']
+
+
+--------------------------------------------------------------------------------
+
+ Code_Aster run
+
+
+<INFO> Command line 1 :
+<INFO> C:\Users\ghchoi\AppData\Local\code_aster\v2023\Python37\python.exe fort.1  --num_job=6843 --mode=interactif --rep_outils=C:\Users\ghchoi\AppData\Local\code_aster\v2023\outils --rep_mat=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster\materiau --rep_dex=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster\datg --numthreads=1 --suivi_batch --tpmax=3600.0 --memjeveux=1024.0
+<INFO> Content of the file to execute
+
+# ------------------------------------------------------------------------------------------
+
+# coding=utf-8
+
+
+
+# temporarly added for compatibility with code_aster legacy
+
+from math import *
+
+
+
+import code_aster
+
+from code_aster.Commands import *
+
+
+
+DEBUT(LANG='EN')
+
+
+
+mesh = LIRE_MAILLAGE(UNITE=20,
+
+                     VERI_MAIL=_F(VERIF='OUI'))
+
+
+
+model = AFFE_MODELE(AFFE=_F(MODELISATION='3D',
+
+                            PHENOMENE='MECANIQUE',
+
+                            TOUT='OUI'),
+
+                    MAILLAGE=mesh)
+
+
+
+mater = DEFI_MATERIAU(ELAS=_F(E=200000000000.0,
+
+                              NU=0.3,
+
+                              RHO=7850.0))
+
+
+
+fieldmat = AFFE_MATERIAU(AFFE=_F(MATER=mater,
+
+                                 TOUT='OUI'),
+
+                         MAILLAGE=mesh,
+
+                         MODELE=model)
+
+
+
+fix = AFFE_CHAR_MECA(DDL_IMPO=_F(DX=0.0,
+
+                                 DY=0.0,
+
+                                 DZ=0.0,
+
+                                 GROUP_MA='fix'),
+
+                     MODELE=model)
+
+
+
+load0 = AFFE_CHAR_MECA(FORCE_FACE=_F(FZ=-50000000.0,
+
+                                     GROUP_MA='load_z'),
+
+                       MODELE=model)
+
+
+
+reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
+
+                       EXCIT=(_F(CHARGE=fix),
+
+                              _F(CHARGE=load0)),
+
+                       MODELE=model)
+
+
+
+unnamed = CALC_CHAMP(CRITERES=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+
+                     RESULTAT=reslin)
+
+
+
+IMPR_RESU(RESU=(_F(NOM_CHAM='DEPL',
+
+                   RESULTAT=reslin),
+
+                _F(NOM_CHAM=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+
+                   RESULTAT=unnamed)),
+
+          UNITE=80)
+
+
+
+IMPR_RESU(FORMAT='RESULTAT',
+
+          RESU=_F(NOM_CHAM='DEPL',
+
+                  RESULTAT=reslin),
+
+          UNITE=8)
+
+
+
+FIN()
+
+
+
+# ------------------------------------------------------------------------------------------
+
+>>> 2026/11/19-22:13:03.605  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:13:03.606  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:382]
+cmd :
+
+C:\Users\ghchoi\AppData\Local\code_aster\v2023\Python37\python.exe fort.1  --num_job=6843 --mode=interactif --rep_outils=C:\Users\ghchoi\AppData\Local\code_aster\v2023\outils --rep_mat=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster\materiau --rep_dex=C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\share\aster\datg --numthreads=1 --suivi_batch --tpmax=3600.0 --memjeveux=1024.0| tee fort.6 & echo EXECUTION_CODE_ASTER_EXIT_6843=%ERRORLEVEL%| tee -a fort.6
+
+background : False
+
+follow_output : True
+Ouverture en écriture du fichier ./vola.1
+
+<INFO> Démarrage de l'exécution.
+
+                                                                                   
+   ___         _         _       _            __      ___         _                
+  / __|___  __| |___    /_\   __| |_ ___ _ _  \ \    / (_)_ _  __| |_____ __ _____ 
+ | (__/ _ \/ _` / -_)  / _ \ (_-<  _/ -_) '_|  \ \/\/ /| | ' \/ _` / _ \ V  V (_-< 
+  \___\___/\__,_\___| /_/ \_\/__/\__\___|_|     \_/\_/ |_|_||_\__,_\___/\_/\_//__/ 
+                                                 https://code-aster-windows.com    
+                  -- CODE_ASTER -- VERSION : DÉVELOPPEMENT STABILISÉE (testing) --                  
+                               Version 16.5.0 modifiée le 20/12/2023                                
+                          révision 5cbe49dc7a4d - branche 'windows-draft'                           
+                                   Copyright EDF R&D 1991 - 2026                                    
+                                                                                                    
+                              Exécution du : Thu Nov 19 22:13:09 2026                               
+                                        Nom de la machine :                                         
+                                             ghchoi-PC                                              
+                                        Architecture : 64bit                                        
+                                     Type de processeur : AMD64                                     
+                                      Système d'exploitation :                                      
+                                     Windows-10-10.0.19041-SP0                                      
+                                  Langue des messages : ko (cp949)                                  
+                                     Version de Python : 3.7.2                                      
+                                     Version de NumPy : 1.16.1                                      
+                                     Parallélisme MPI : inactif                                     
+                                    Parallélisme OpenMP : actif                                     
+                              Nombre de processus OpenMP utilisés : 1                               
+                               Version de la librairie HDF5 : 1.10.9                                
+                                Version de la librairie MED : 4.1.1                                 
+                                 Librairie MFront : non disponible                                  
+                               Version de la librairie MUMPS : 5.5.1                                
+                                  Librairie PETSc : non disponible                                  
+                               Version de la librairie SCOTCH : 7.0.3                               
+
+starting the execution...
+Valeur initiale du temps CPU maximum =   3600 secondes
+  Valeur du temps CPU maximum passé aux
+commandes =   3240 secondes
+  Réserve CPU prévue = 360 secondes
+
+Ouverture en écriture du fichier ./glob.1
+
+Ouverture en écriture du fichier ./vola.1
+
+Ouverture en lecture du fichier
+C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster/elem.1
+
+Nom de la base                          :  ELEMBASE
+     Créée avec la version                   : 
+16.05.00
+     Nombre d'enregistrements utilisés       :  45
+     Nombre d'enregistrements maximum   
+    :  512
+     Nombre d'enregistrements par fichier    :  512
+     Longueur d'enregistrement
+(octets)      :  819200
+     Nombre d'identificateurs utilisés       :  123
+     Taille maximum du
+répertoire            :  300
+     Pourcentage d'utilisation du répertoire :  41 %
+
+Ouverture en lecture du fichier
+C:\Users\ghchoi\AppData\Local\code_aster\v2023\16.5\lib\aster/elem.1
+
+Nom de la base                          :  ELEMBASE
+     Nombre d'enregistrements utilisés       : 
+45
+     Nombre d'enregistrements maximum        :  512
+     Nombre d'enregistrements par fichier   
+:  512
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès en lecture  
+      :  63
+     Volume des accès en lecture             :         49.22 Mo.
+     Nombre total
+d'accès en écriture        :  0
+     Volume des accès en écriture            :          0.00 Mo.
+   
+ Nombre d'identificateurs utilisés       :  123
+     Taille maximum du répertoire            :  300
+
+    Pourcentage d'utilisation du répertoire :  41 %
+
+Relecture des catalogues des éléments faite.
+
+Fin de lecture (durée  0.000000  s.) 
+
+                      Mémoire limite pour l'allocation dynamique : 8704.00 Mo                       
+                              ajouté à l'initialisation du processus :                              
+                                             270.77 Mo                                              
+                               Limite cible du processus : 8974.77 Mo                               
+                         Taille limite des fichiers d'échange : 2048.00 Go                          
+# Mémoire (Mo) :   270.77 /   263.33 /   208.39 /   184.66 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0001   user+syst:        0.17s (syst:        0.12s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt12
+# ----------------------------------------------------------------------------------------------
+# Commande #0002 de fort.1, ligne 12
+mesh = LIRE_MAILLAGE(FORMAT='MED',
+
+                     INFO=1,
+
+                     INFO_MED=0,
+
+                     PARTITIONNEUR='SANS',
+
+                     UNITE=20,
+
+                     VERI_MAIL=_F(APLAT=0.001,
+
+                                  VERIF='OUI'))
+
+
+Ctrl click to launch VS Code Native REPL (https://aka.ms/python-native-repl)
+Nom MED du maillage : Mesh_1
+
+
+------------ MAILLAGE 00000001 - IMPRESSIONS NIVEAU  1 ------------
+
+
+NOMBRE DE NOEUDS                      127635
+
+NOMBRE DE MAILLES                      99184
+                              SEG3                  680
+                              TRIA6               13988
+                              TETRA10             84516
+
+NOMBRE DE GROUPES DE MAILLES               3
+
+--------------------------------------------------------------------------------
+
+Vérification du maillage.
+
+# Résultat commande #0002 (LIRE_MAILLAGE): mesh ('<00000001>') de type <Mesh>
+# Mémoire (Mo) :   433.43 /   323.52 /   230.72 /   199.49 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0002   user+syst:        3.39s (syst:        0.16s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt17
+# ----------------------------------------------------------------------------------------------
+# Commande #0003 de fort.1, ligne 17
+model = AFFE_MODELE(AFFE=_F(MODELISATION='3D',
+
+                            PHENOMENE='MECANIQUE',
+
+                            TOUT='OUI'),
+
+                    DISTRIBUTION=_F(METHODE='SOUS_DOMAINE',
+
+                                    PARTITIONNEUR='METIS'),
+
+                    INFO=1,
+
+                    MAILLAGE=mesh,
+
+                    VERI_JACOBIEN='OUI',
+
+                    VERI_NORM_IFS='OUI')
+
+
+Sur les 99184 mailles du maillage 00000001, on a demandé l'affectation de 99184, on a pu en affecter
+99184.
+Modélisation     Formulation      Type maille  Élément fini     Nombre
+_                _                SEG3         MECA_ARETE3      680
+_                _                TRIA6        MECA_FACE6       13988
+3D               _                TETRA10      MECA_TETRA10     84516
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      0.23      0.00      0.00
+# Résultat commande #0003 (AFFE_MODELE): model ('<00000002>') de type <Model>
+# Mémoire (Mo) :   433.43 /   337.10 /   232.72 /   221.31 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0003   user+syst:        0.75s (syst:        0.00s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt21
+# ----------------------------------------------------------------------------------------------
+# Commande #0004 de fort.1, ligne 21
+mater = DEFI_MATERIAU(ELAS=_F(B_ENDOGE=0.0,
+
+                              COEF_AMOR=1.0,
+
+                              E=200000000000.0,
+
+                              K_DESSIC=0.0,
+
+                              NU=0.3,
+
+                              RHO=7850.0),
+
+                      INFO=1)
+
+
+# Résultat commande #0004 (DEFI_MATERIAU): mater ('<00000003>') de type <Material>
+# Mémoire (Mo) :   433.43 /   337.30 /   232.72 /   221.31 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0004   user+syst:        0.02s (syst:        0.00s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt26
+# ----------------------------------------------------------------------------------------------
+# Commande #0005 de fort.1, ligne 26
+fieldmat = AFFE_MATERIAU(AFFE=_F(MATER=mater,
+
+                                 TOUT='OUI'),
+
+                         INFO=1,
+
+                         MAILLAGE=mesh,
+
+                         MODELE=model)
+
+
+# Résultat commande #0005 (AFFE_MATERIAU): fieldmat ('<00000004>') de type <MaterialField>
+# Mémoire (Mo) :   433.43 /   337.51 /   232.72 /   221.31 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0005   user+syst:        0.00s (syst:        0.00s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt32
+# ----------------------------------------------------------------------------------------------
+# Commande #0006 de fort.1, ligne 32
+fix = AFFE_CHAR_MECA(DDL_IMPO=_F(DX=0.0,
+
+                                 DY=0.0,
+
+                                 DZ=0.0,
+
+                                 GROUP_MA='fix'),
+
+                     DOUBLE_LAGRANGE='OUI',
+
+                     INFO=1,
+
+                     MODELE=model,
+
+                     VERI_AFFE='OUI',
+
+                     VERI_NORM='OUI')
+
+
+# Résultat commande #0006 (AFFE_CHAR_MECA): fix ('<00000005>') de type <MechanicalLoadReal>
+# Mémoire (Mo) :   433.43 /   345.60 /   235.25 /   221.31 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0006   user+syst:        0.02s (syst:        0.02s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt36
+# ----------------------------------------------------------------------------------------------
+# Commande #0007 de fort.1, ligne 36
+load0 = AFFE_CHAR_MECA(DOUBLE_LAGRANGE='OUI',
+
+                       FORCE_FACE=_F(FZ=-50000000.0,
+
+                                     GROUP_MA='load_z'),
+
+                       INFO=1,
+
+                       MODELE=model,
+
+                       VERI_AFFE='OUI',
+
+                       VERI_NORM='OUI')
+
+
+# Résultat commande #0007 (AFFE_CHAR_MECA): load0 ('<00000006>') de type <MechanicalLoadReal>
+# Mémoire (Mo) :   433.43 /   345.12 /   253.52 /   221.31 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0007   user+syst:        0.28s (syst:        0.00s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt41
+# ----------------------------------------------------------------------------------------------
+# Commande #0008 de fort.1, ligne 41
+reslin = MECA_STATIQUE(CHAM_MATER=fieldmat,
+
+                       EXCIT=(_F(CHARGE=fix,
+
+                                 TYPE_CHARGE='FIXE_CSTE'),
+
+                              _F(CHARGE=load0,
+
+                                 TYPE_CHARGE='FIXE_CSTE')),
+
+                       INFO=1,
+
+                       INST=0.0,
+
+                       MODELE=model,
+
+                       OPTION='SIEF_ELGA',
+
+                       SOLVEUR=_F(ACCELERATION='AUTO',
+
+                                  ELIM_LAGR='LAGR2',
+
+                                  GESTION_MEMOIRE='AUTO',
+
+                                  LOW_RANK_SEUIL=0.0,
+
+                                  MATR_DISTRIBUEE='NON',
+
+                                  METHODE='MUMPS',
+
+                                  NB_RHS=1,
+
+                                  NPREC=8,
+
+                                  PCENT_PIVOT=35,
+
+                                  POSTTRAITEMENTS='AUTO',
+
+                                  PRETRAITEMENTS='AUTO',
+
+                                  REDUCTION_MPI=0,
+
+                                  RENUM='AUTO',
+
+                                  RESI_RELA=1e-06,
+
+                                  STOP_SINGULIER='OUI',
+
+                                  TYPE_RESOL='AUTO'))
+
+
+Le système linéaire à résoudre a 385695 degrés de liberté:
+   - 382905 sont des degrés de liberté
+physiques
+     (ils sont portés par 127635 noeuds du maillage)
+   - 2790 sont les couples de
+paramètres de Lagrange associés
+     aux 1395 relations linéaires dualisées.
+La matrice est de taille 385695 équations.
+  Elle contient 15524145 termes non nuls si elle est
+symétrique et 30662595 termes non nuls si elle n'est pas symétrique.
+  Soit un taux de remplissage
+de   0.021 %.
+Champ stocké <DEPL> à l'instant  0.000000000000e+00 pour le numéro d'ordre 1
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      2.31      0.00      3.00
+# Résultat commande #0008 (MECA_STATIQUE): reslin ('<00000007>') de type <ElasticResult>
+# Mémoire (Mo) :  3553.25 /   399.79 /   758.20 /   707.10 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0008   user+syst:       79.09s (syst:        3.30s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt44
+# ----------------------------------------------------------------------------------------------
+# Commande #0010 de fort.1, ligne 44
+unnamed = CALC_CHAMP(CRITERE='RELATIF',
+
+                     CRITERES=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+
+                     INFO=1,
+
+                     PARALLELISME_TEMPS='NON',
+
+                     PRECISION=1e-06,
+
+                     RESULTAT=reslin)
+
+
+#2      Calculs elementaires et assemblages               CPU (USER+SYST/SYST/ELAPS):      2.73      0.00      3.00
+# Résultat commande #0010 (CALC_CHAMP): unnamed ('<0000002f>') de type <ElasticResult>
+# Dépend de :
+# - model ('<00000002>') de type <Model>
+# - fieldmat ('<00000004>') de type <MaterialField>
+# Mémoire (Mo) :  3553.25 /   667.47 /   786.87 /   707.10 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0010   user+syst:        6.14s (syst:        0.09s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt50
+# ----------------------------------------------------------------------------------------------
+# Commande #0011 de fort.1, ligne 50
+IMPR_RESU(FICHIER_UNIQUE='OUI',
+
+          FORMAT='MED',
+
+          INFO=1,
+
+          PROC0='OUI',
+
+          RESU=(_F(IMPR_NOM_VARI='OUI',
+
+                   INFO_MAILLAGE='NON',
+
+                   NOM_CHAM='DEPL',
+
+                   NOM_CHAM_MED='reslin__DEPL',
+
+                   RESULTAT=reslin),
+
+                _F(IMPR_NOM_VARI='OUI',
+
+                   INFO_MAILLAGE='NON',
+
+                   NOM_CHAM=('SIEQ_ELGA', 'SIEQ_ELNO', 'SIEQ_NOEU'),
+
+                   NOM_CHAM_MED=('unnamed_SIEQ_ELGA', 'unnamed_SIEQ_ELNO', 'unnamed_SIEQ_NOEU'),
+
+                   RESULTAT=unnamed)),
+
+          UNITE=80,
+
+          VERSION_MED='3.3.1')
+
+
+Création du fichier au format MED 3.3.1.
+
+# Mémoire (Mo) :  3553.25 /   667.06 /   786.87 /   707.10 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0011   user+syst:        3.41s (syst:        0.30s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt55
+# ----------------------------------------------------------------------------------------------
+# Commande #0012 de fort.1, ligne 55
+IMPR_RESU(FORMAT='RESULTAT',
+
+          INFO=1,
+
+          PROC0='OUI',
+
+          RESU=_F(FORMAT_R='1PE21.14',
+
+                  FORM_TABL='NON',
+
+                  IMPR_COOR='NON',
+
+                  NOM_CHAM='DEPL',
+
+                  RESULTAT=reslin),
+
+          UNITE=8)
+
+
+# Mémoire (Mo) :  3553.25 /   667.14 /   786.87 /   707.10 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0012   user+syst:        0.91s (syst:        0.05s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+
+.. _stg1_txt57
+# ----------------------------------------------------------------------------------------------
+# Commande #0013 de fort.1, ligne 57
+FIN(INFO_RESU='NON',
+
+    RETASSAGE='NON')
+
+
+Saving objects...
+pi                       <class 'float'>
+e                        <class 'float'>
+tau                      <class 'float'>
+inf                      <class 'float'>
+nan                      <class 'float'>
+mesh                     <class 'libaster.Mesh'>
+model                    <class 'libaster.Model'>
+mater                    <class 'libaster.Material'>
+fieldmat                 <class 'libaster.MaterialField'>
+fix                      <class 'libaster.MechanicalLoadReal'>
+load0                    <class 'libaster.MechanicalLoadReal'>
+reslin                   <class 'libaster.ElasticResult'>
+unnamed                  <class 'libaster.ElasticResult'>
+
+ ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+ ║ <I> <CATAMESS_89>                                                                              ║
+ ║                                                                                                ║
+ ║ Liste des alarmes émises lors de l'exécution du calcul.                                        ║
+ ║                                                                                                ║
+ ║     Les alarmes que vous avez                                                                  ║
+ ║ choisies d'ignorer sont précédées de (*).                                                      ║
+ ║     Nombre d'occurrences pour chacune des alarmes :                                            ║
+ ║                                                                                                ║
+ ║           aucune alarme                                                                        ║
+ ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+ ---------------------------------------------------------------------------
+ Concepts de la base: G
+    Nom        Type                Taille (Mo)         Nombre      Nombre de
+                                                     d'objets       segments
+    TOTAL                               375.52            259            386
+  
+    00000001   MAILLAGE_SDASTER          18.33             34             50
+    00000002   MODELE_SDASTER             9.85              9             14
+    00000003   MATER_SDASTER              0.00              7              7
+    00000004   CHAM_MATER                 0.00              8             13
+    00000005   CHAR_MECA                  7.38             54             74
+    00000006   CHAR_MECA                  0.76             39             44
+    00000007   EVOL_ELAS                 24.92             18             22
+    00000008   *L_CHARGES                 0.00              4              4
+    00000009   *NUME_EQUA                20.73              8             13
+    0000002f   EVOL_ELAS                263.09             31             37
+    &FOZERO                               0.00              2              2
+    &&_NUM_C                              0.00              1              1
+    &CATA                                30.47             42            103
+    &&NMDOME                              0.00              2              2
+ (*) sous-objets non accessible directement
+ ---------------------------------------------------------------------------
+Nom de la base                          :  GLOBALE
+     Nombre d'enregistrements utilisés       : 
+624
+     Nombre d'enregistrements maximum        :  2684354
+     Nombre d'enregistrements par
+fichier    :  15728
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès
+en lecture         :  14
+     Volume des accès en lecture             :         10.94 Mo.
+    
+Nombre total d'accès en écriture        :  1061
+     Volume des accès en écriture            :      
+ 828.91 Mo.
+     Nombre d'identificateurs utilisés       :  632
+     Taille maximum du répertoire   
+        :  2000
+     Pourcentage d'utilisation du répertoire :  31 %
+
+Nom de la base                          :  VOLATILE
+     Nombre d'enregistrements utilisés       : 
+107
+     Nombre d'enregistrements maximum        :  2684354
+     Nombre d'enregistrements par
+fichier    :  15728
+     Longueur d'enregistrement (octets)      :  819200
+     Nombre total d'accès
+en lecture         :  0
+     Volume des accès en lecture             :          0.00 Mo.
+     Nombre
+total d'accès en écriture        :  291
+     Volume des accès en écriture            :        227.34
+Mo.
+     Nombre d'identificateurs utilisés       :  379
+     Taille maximum du répertoire           
+:  2000
+     Pourcentage d'utilisation du répertoire :  18 %
+
+<I> <FIN> ARRET NORMAL DANS "FIN" PAR APPEL A "JEFINI".
+  
+ <I> <FIN> MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :                     707.10 Mo
+ <I> <FIN> MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :                     786.87 Mo
+ <I> <FIN> MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS LORS DE L'EXECUTION :    3553.25 Mo
+  
+ <I>       FERMETURE DES BASES EFFECTUEE
+  
+   STATISTIQUES CONCERNANT L'ALLOCATION DYNAMIQUE :
+     TAILLE CUMULEE MAXIMUM            :                  787  Mo.
+     TAILLE CUMULEE LIBEREE            :                  640  Mo.
+     NOMBRE TOTAL D'ALLOCATIONS        :              1258187
+     NOMBRE TOTAL DE LIBERATIONS       :              1258167
+     APPELS AU MECANISME DE LIBERATION :                    0
+     TAILLE MEMOIRE CUMULEE RECUPEREE  :                  183  Mo.
+     VOLUME DES LECTURES               :                    0  Mo.
+     VOLUME DES ECRITURES              :                  188  Mo.
+  
+   MEMOIRE JEVEUX MINIMALE REQUISE POUR L'EXECUTION :     707.10 Mo
+     - IMPOSE DE NOMBREUX ACCES DISQUE
+     - RALENTIT LA VITESSE D'EXECUTION
+   MEMOIRE JEVEUX OPTIMALE REQUISE POUR L'EXECUTION :     786.87 Mo
+     - LIMITE LES ACCES DISQUE
+     - AMELIORE LA VITESSE D'EXECUTION
+   MAXIMUM DE MEMOIRE UTILISEE PAR LE PROCESSUS     :    3553.25 Mo
+     - COMPREND LA MEMOIRE CONSOMMEE PAR  JEVEUX, 
+       LE SUPERVISEUR PYTHON, LES LIBRAIRIES EXTERNES
+  
+ <I>       FIN D'EXECUTION LE : JE-19-NOVE-2026 22:14:51
+Signature of pickled file   : 319a50d6c5d5c7b475dcf4357fc4cc7bad7ae00b3d9198eed9f941128e72956b
+Signature of info file      : 41c0213008f489f56b752c3793d72d72bd9acba4b17df284af39d019f5f5286e
+Signature of Jeveux database: 514c061f1047cc9e0a280716bca43fea16fb89e1b2693203e0b586ad946ff226
+
+
+ ********************************************************************************
+
+ * COMMAND                  :       USER :     SYSTEM :   USER+SYS :    ELAPSED *
+
+ ********************************************************************************
+
+ * DEBUT                    :       0.17 :       0.12 :       0.30 :       0.00 *
+
+ * LIRE_MAILLAGE            :       3.39 :       0.16 :       3.55 :       0.00 *
+
+ * AFFE_MODELE              :       0.75 :       0.00 :       0.75 :       0.00 *
+
+ * DEFI_MATERIAU            :       0.02 :       0.00 :       0.02 :       0.00 *
+
+ * AFFE_MATERIAU            :       0.00 :       0.00 :       0.00 :       0.00 *
+
+ * AFFE_CHAR_MECA           :       0.02 :       0.02 :       0.03 :       0.00 *
+
+ * AFFE_CHAR_MECA           :       0.28 :       0.00 :       0.28 :       0.00 *
+
+ * MECA_STATIQUE            :      79.09 :       3.30 :      82.39 :       0.00 *
+
+ * CALC_CHAMP               :       6.14 :       0.09 :       6.23 :       0.00 *
+
+ * IMPR_RESU                :       3.41 :       0.30 :       3.70 :       0.00 *
+
+ * IMPR_RESU                :       0.91 :       0.05 :       0.95 :       0.00 *
+
+ * FIN                      :       0.38 :       0.45 :       0.83 :       0.00 *
+
+ *  . check syntax          :       0.02 :       0.00 :       0.02 :       0.00 *
+
+ *  . fortran               :      14.41 :       1.05 :      15.45 :       0.00 *
+
+ ********************************************************************************
+
+ * TOTAL_JOB                :      94.56 :       4.48 :      99.05 :       0.00 *
+
+ ********************************************************************************
+
+
+End of the Code_Aster execution
+Exited
+# Mémoire (Mo) :  3553.25 /    99.26 /   786.87 /   707.10 (VmPeak / VmSize / Optimum / Minimum)
+# Fin commande #0013   user+syst:        0.38s (syst:        0.45s, elaps:        0.00s)
+# ----------------------------------------------------------------------------------------------
+EXECUTION_CODE_ASTER_EXIT_6843=0
+
+>>> 2026/11/19-22:14:53.094  [_diag_erre@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1499]
+n_debut=1, n_fin=1, mess=False : ok=True
+
+>>> 2026/11/19-22:14:53.095  [_diag_erre@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1500]
+alarm=False, errs=False, fatal=False, exitcode=0
+
+>>> 2026/11/19-22:14:53.096  [getDiag@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1213]
+Fichier : fort.6
+
+_diag_erre : OK
+
+>>> 2026/11/19-22:14:53.099  [getDiag@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1229]
+Fichier : fort.6
+
+_diag_resu : OK
+
+>>> 2026/11/19-22:14:53.103  [_diag_erre@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1499]
+n_debut=1, n_fin=1, mess=True : ok=True
+
+>>> 2026/11/19-22:14:53.104  [_diag_erre@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1500]
+alarm=False, errs=False, fatal=False, exitcode=0
+
+>>> 2026/11/19-22:14:53.104  [getDiag@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\build.py:1231]
+Fichier : fort.6
+
+_diag_erre : OK
+<INFO> Code_Aster run ended, diagnostic : OK
+
+
+--------------------------------------------------------------------------------
+
+ Content of C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843 after execution
+
+
+
+>>> 2026/11/19-22:14:53.106  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:14:53.107  [execute@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:502]
+cmd :
+
+ls -la . REPE_OUT
+
+background : False
+
+follow_output : False
+b''
+
+
+--------------------------------------------------------------------------------
+
+ Size of bases
+
+
+<INFO> size of vola.1 :     87654408 bytes
+<INFO> size of glob.1 :    511180808 bytes
+<INFO> size of pick.code_aster.infos :          172 bytes
+<INFO> size of pick.code_aster.objects :         3658 bytes
+<INFO> size of pick.code_aster.sha :          222 bytes
+
+
+--------------------------------------------------------------------------------
+
+ Copying results
+
+
+
+>>> 2026/11/19-22:14:53.136  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+source list : ('fort.6',)
+
+destination : C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.mess
+
+>>> 2026/11/19-22:14:53.137  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+cmd :
+
+copy "fort.6" "C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.mess"
+
+background : False
+
+follow_output : False
+copying ...\fort.6...                                                   
+>>> 2026/11/19-22:14:53.160  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+source list : ('fort.8',)
+
+destination : C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.resu
+
+>>> 2026/11/19-22:14:53.161  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+cmd :
+
+copy "fort.8" "C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.resu"
+
+background : False
+
+follow_output : False
+copying ...\fort.8...                                                   
+>>> 2026/11/19-22:14:53.371  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+source list : ('fort.80',)
+
+destination : C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\result.rmed
+
+>>> 2026/11/19-22:14:53.927  [copyfileR@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\execution.py:682]
+cmd :
+
+copy "fort.80" "C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\result.rmed"
+
+background : False
+
+follow_output : False
+copying ...\fort.80...                                                  
+
+OK                 Code_Aster run ended
+
+
+
+
+ 
+
+ ---------------------------------------------------------------------------------
+
+                                            cpu     system    cpu+sys    elapsed
+
+ ---------------------------------------------------------------------------------
+
+   Preparation of environment              0.00       0.00       0.00       0.00
+
+   Copying datas                           0.02       0.00       0.02       0.15
+
+   Code_Aster run                          0.02       0.00       0.02     109.49
+
+   Copying results                         0.03       0.00       0.03       2.47
+
+ ---------------------------------------------------------------------------------
+
+   Total                                   0.20       0.08       0.28     112.59
+
+ ---------------------------------------------------------------------------------
+
+
+as_run 2021.0
+
+
+------------------------------------------------------------
+
+--- DIAGNOSTIC JOB : OK
+
+------------------------------------------------------------
+
+
+
+
+EXIT_CODE=0
+
+>>> 2026/11/19-22:14:55.611  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:14:55.612  [_clear_tmp@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\run.py:483]
+cmd :
+
+rd /s /q C:\Users\ghchoi\AppData\Local\Temp\astk_ghchoi\ghchoi-ghchoi-PC-profil_astk_6843
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:14:55.627  [Shell@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\system.py:573]
+remote command ( <> ghchoi-PC and ghchoi <> ghchoi) ? False
+
+>>> 2026/11/19-22:14:55.627  [_clear_tmp@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\run.py:483]
+cmd :
+
+rd /s /q C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843
+
+background : False
+
+follow_output : False
+
+>>> 2026/11/19-22:14:57.251  [Sortie@C:\Users\ghchoi\AppData\Local\code_aster\v2023\lib\python3.7\site-packages\asrun\run.py:732]
+exit 0
+
+=== returncode: 0 ===

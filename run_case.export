@@ -1,0 +1,17 @@
+P actions make_etude
+P debug nodebug
+P mode interactif
+P ncpus 1
+P nomjob analysis
+P rep_trav C:\Users\ghchoi\AppData\Local\Temp\ghchoi-ghchoi-PC-interactif_6843
+P time_limit 3600.0
+P tpsjob 61
+P version stable
+A args 
+A memjeveux 1024.0
+A tpmax 3600.0
+F comm C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.comm D  1
+F mmed C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\mesh.med D  20
+F mess C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.mess R  6
+F resu C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\analysis.resu R  8
+F rmed C:\Users\ghchoi\Desktop\Antigravity\Salome_meca_automation\result.rmed R  80
